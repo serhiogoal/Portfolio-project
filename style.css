@@ -1,0 +1,97 @@
+body{
+    font-family: 'Radio Canada', sans-serif;
+    margin: 10px 200px;
+}
+
+nav{
+    display: flex;
+}
+
+.navigation-items{
+    display: flex;
+    margin-left: 50%;
+    padding: 0;
+    align-items: center;
+
+}
+
+.navigation-item{
+    margin: 10px;
+    font-size: 18px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+h2{
+    font-weight: 700;
+}
+
+p{
+    line-height: 2;
+    width: 65%;
+}
+
+#about-me{
+    position: relative;
+}
+
+#my-portfolio-picture{
+    position: absolute;
+    top: 0;
+    right: 0;
+    max-width: 100%;
+    width: 300px;
+    height: 400px;
+}
+
+.project-image{
+    width: 80%;
+}
+
+details{
+    cursor: pointer;
+}
+
+details summary > *{
+    display: inline;
+    font-weight: 300;
+}
+
+#skills-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 100px;
+}
+  
+#skills-container > * {
+    font-size: 2em;
+    width: 2em;
+    margin-top: var(--spacing-1);
+}
+
+#skills-container img{
+    width: 5%;
+    height: 5%;
+}
+
+#contact-container{
+    display: inline;
+    width: 100%;
+}
+
+#contact-container img{
+    width: auto;
+    height: 50px;
+    padding: 0 20px;
+}
+
+footer{
+    padding: 0;
+    text-align: center;
+    margin-top: auto;
+}
