@@ -6,7 +6,6 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Radio+Canada:wght@400;700&display=swap" rel="stylesheet">
-        <script src="script.js"></script>
     </head>
 
     <body>
@@ -14,7 +13,7 @@
             <h1 id="logo">Serhii Kryvyi</h1>
 
             <ul class="navigation-items">
-                <li class="navigation-item"><a href="#about-me">About me</a></li>
+                <li class="navigation-item" id="first-item"><a href="#about-me">About me</a></li>
                 <li class="navigation-item"><a href="#projects">Projects</a></li>
                 <li class="navigation-item"><a href="#skills">Skills</a></li>
                 <li class="navigation-item"><a href="contact.html">Contact</a></li>
@@ -40,9 +39,8 @@
                     My strengths include quick-learning and multi-tasking. I value communication, feedback, and collaboration. 
                     I'm passionate about coding and seek for opportunities to practice on a big project.
                 </p>
-                <button id="theme">
-                    Press this text to change the theme!
-                </button>
+
+                <button id="change-color">Change the color</button>
 
                 <img src="My-Portfolio-Picture.jpg" alt="A photo of Serhii Kryvyi" id="my-portfolio-picture">
             </section>
@@ -85,5 +83,35 @@
         <footer>
             Inspired by Serhii Kryvyi
         </footer>
+
+        <script>
+            const changeColorButton = document.getElementById('change-color');
+            const body = document.body;
+            body.style.color = 'black';
+            let isBlack = true;
+
+            changeColorButton.addEventListener('click', () => {
+
+
+                if(isBlack){
+                    body.style.backgroundColor = 'black';
+                    body.style.color = 'white';
+                    document.getElementsByTagName("a")[0].style.color = "white";
+                    document.getElementsByTagName("a")[1].style.color = "white";
+                    document.getElementsByTagName("a")[2].style.color = "white";
+                    document.getElementsByTagName("a")[3].style.color = "white";
+                    document.getElementById("skills-container").style.backgroundColor = "white";
+                } else{
+                    body.style.backgroundColor = 'white';
+                    body.style.color = 'black';
+                    document.getElementsByTagName("a")[0].style.color = "black";
+                    document.getElementsByTagName("a")[1].style.color = "black";
+                    document.getElementsByTagName("a")[2].style.color = "black";
+                    document.getElementsByTagName("a")[3].style.color = "black";
+                }
+
+                isBlack = !isBlack;
+            });
+        </script>
     </body>
 </html>
