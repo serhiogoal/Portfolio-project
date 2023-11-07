@@ -36,6 +36,7 @@ p{
 
 #about-me{
     position: relative;
+    padding-right: 20px;
 }
 
 #my-portfolio-picture{
@@ -94,4 +95,33 @@ footer{
     padding: 0;
     text-align: center;
     margin-top: auto;
+}
+
+@media screen and (max-width: 1280px) {
+    body{
+        margin: 0 20px;
+    }
+
+    #my-portfolio-picture{
+        width: 200px;
+        height: 250px;
+    }
+
+    .navigation-items{
+        margin-left: 10px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #my-portfolio-picture{
+        display: none;
+    }
+
+    .navigation-items{
+        list-style: none;
+    }
+
+    .navigation-item{
+        font-size: 14px;
+    }
 }
